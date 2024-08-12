@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\Dashboard;
-use App\Http\Controllers\User;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [Dashboard::class, 'index']);
-Route::get('/profile', [User::class, 'profile']);
+Route::get('/dashboard', [DashboardController::class, 'index']);
+
+Route::get('/profile', [ProfileController::class, 'index']);
