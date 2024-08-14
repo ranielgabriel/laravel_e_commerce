@@ -13,6 +13,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/profile">Profile</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('create_product') }}">Create Product</a>
+                    {{-- <a class="nav-link" href="/product/create">Create Product</a> --}}
+                </li>
             </ul>
         </div>
     </div>
