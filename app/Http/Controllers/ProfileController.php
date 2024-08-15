@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use function Pest\Laravel\json;
+
 class ProfileController extends Controller
 {
     //
@@ -11,7 +13,7 @@ class ProfileController extends Controller
     {
         $email = "rgabriel@wup.edu.ph";
         $name = "Raniel";
-        return view('profile')
+        return view('user.profile')
             ->with("email", $email)
             ->with("name", $name);
     }
