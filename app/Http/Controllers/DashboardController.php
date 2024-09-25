@@ -10,8 +10,7 @@ class DashboardController extends Controller
     //
     public function index()
     {
-        // Pang display ng product
         $products = Product::orderBy('id', 'DESC')->get();
-        return view('dashboard')->with('products', $products);
+        return view('dashboard')->with('products', json_encode($products));
     }
 }
